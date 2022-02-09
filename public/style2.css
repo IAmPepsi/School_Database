@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif
+
+}
+body{
+  background-image: url(kidsbakc.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 60px;
+}
+.nav_1{
+  display: flex;
+  justify-content: space-between;
+  /*background: pink;*/
+  width: 40%;
+  list-style: none;
+  align-items: center;
+  margin-right: 25%;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  margin-right: 20%;
+  color: #00ffb0;
+}
+.current{
+  color: #00ffb0;
+}
+li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2rem;
+}
+li a:hover{
+  color: #00ffb0;
+  font-size: 1.3rem;
+}
+li a:active{
+  color: #00ffb0;
+}
+
+
+
+
+.container{
+  margin: 5% 25% 0 25%;
+  background-color: rgb(245, 185, 56);
+}
+.con_2{
+  height: 80vh;
+  padding: 5%;
+}
+input{
+  margin-top: 1.5%;
+  padding: 5px 58px 5px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+
+}
+.inp_1{
+  width: 96%;
+}
+.inp_2{
+  width: 45%;
+
+}
+.eee{
+  margin-right: 10px;
+}
+.ini_1{
+  width: 49%;
+
+}
+.ini_2{
+  margin-bottom: 20px;
+}
+.birthday{
+  margin-bottom: 20px;
+}
+.gender{
+  margin-bottom: 20px;
+}
+.click{
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+button{
+  padding: 10px 50px;
+  background-color: #285A5B;
+  border: 1px solid #285A5B;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 20px;
+
+}
+button:hover{
+  font-size: 1.4rem;
+
+}
+span{
+  font-size: 1.2rem;
+}
+.day , .month , .years{
+  margin: 20px 0 0 0;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
+
+.roll h1{
+  font-size: 1.8rem;
+
+}
+
+.roll{
+  margin-bottom: 20px;
+}
+
+.wrong{
+  text-align: center;
+  color: #dc3545;
+  font-size: 1.4rem;
+  margin-left: 50px;
+}

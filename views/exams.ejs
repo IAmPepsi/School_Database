@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="substyle.css">
+    <title>Exams</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>Angels School</h2>
+      </div>
+      <ul class="nav_1">
+        <li><a href="dashbord">dashbord</a></li>
+        <li><a href="#">About</a></li>
+      
+        <li><a href="#">Contact us</a></li>
+        <li> <form class="logout" action="/logout" method="post">
+          <button id="logout" type="submit" name="button">Logout</button>
+        </form> </li>
+      </ul>
+    </nav>
+
+    <div class="sec_2">
+      <h1>Information about Exams</h1>
+      <table>
+        <tr>
+          <td class="bld_1">Exam's name</td>
+          <td class="bld_1">Date</td>
+          <td class="bld_1">Teacher's name</td>
+          <td class="bld_1">Register</td>
+        </tr>
+        <% for(var i=0; i < names.length;i++){ %>
+          <%var name, date , teacher,id%>
+          <%name=names[i]%>
+          <%date=dates[i]%>
+          <%teacher =teachers[i]%>
+          <%id=ids[i]%>
+        <tr>
+          <td><%=name %></td>
+          <td><%=date %></td>
+          <td><%=teacher %></td>
+          <td> <form class="" action="/examRegister" method="post">
+            <button id="btn_1" type="submit" name="button">Register</button>
+            <input type="hidden" name="hidden_id" value="<%=id%>">
+          </form>  </td>
+        </tr>
+        <%}%>
+
+
+      </table>
+      <div class="wrongsub">
+      <i class="wrong"><%=exam_wrong%><%=exam_suc%></i>
+      </div>
+
+      <footer class="foot">
+        <div class="fot_2">
+          <h1 class="tot_5">Angels School</h1>
+          <p class="tot_5">Child's second Home</p>
+
+        </div>
+
+
+
+      </footer>
+
+
+
+  </body>
+</html>

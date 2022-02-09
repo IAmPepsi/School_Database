@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 60px;
+}
+.nav_1{
+  display: flex;
+  justify-content: space-between;
+  /*background: pink;*/
+  width: 30%;
+  list-style: none;
+  align-items: center;
+  margin-right: 25%;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  margin-right: 20%;
+  color: #00ffb0;
+}
+.current{
+  color: #00ffb0;
+}
+li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2rem;
+}
+li a:hover{
+  color: #00ffb0;
+  font-size: 1.3rem;
+}
+li a:active{
+  color: #00ffb0;
+}
+
+
+#logout{
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  font-size: 1.3rem;
+  background-color: 000;
+
+}
+
+#logout:hover{
+  color: #00ffb0;
+  font-size: 1.4rem;
+}
+
+
+.sec_2{
+
+  height: 40vh;
+}
+.sec_2 h1{
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+table{
+  width: 100%;
+  height: 50%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  margin-bottom: 10%;
+}
+.bld_1{
+  font-weight: bold;
+  font-size: 1.5rem;
+
+}
+td th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 50px;
+  width: 100%;
+}
+td{
+  padding-left: 50px;
+  font-size: 1.3rem;
+
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.trnew{
+text-align: center;
+
+
+}
+
+
+#btn_1{
+  color: #AB3A63;
+  border: none;
+  background-color: inherit;
+  font-size: 1.3rem;
+}
+#btn_1:hover{
+  font-weight: bold;
+  color: #AB3A63;
+  font-size: 1.4rem;
+}
+#btn_2{
+  color: #AB3A63;
+  border: none;
+  background-color: inherit;
+  font-size: 1.3rem;
+}
+#btn_2:hover{
+  color: #000;
+}
+
+
+.foot{
+  height: 43.3vh;
+  background-image: url(girl.jpeg);
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.fot_2 {
+  padding-top: 100px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+.fot_2 p{
+  margin-left: 20px;
+  color: #00ffb0;
+}
+
+.wrong{
+  text-align: center;
+  color: #dc3545;
+  font-size: 1.4rem;
+  background-color: rgba(255, 158, 179, 0.5);
+  border-radius: 10px;
+
+}
+.wrongsub{
+text-align: center;
+margin-bottom: 30px;
+
+
+}

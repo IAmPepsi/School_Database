@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="substyle.css">
+    <title>Student's grade</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>Angels School</h2>
+      </div>
+      <ul class="nav_1">
+        <li><a href="dashbord">dashbord</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li> <form class="logout" action="/logout" method="post">
+          <button id="logout" type="submit" name="button">Logout</button>
+        </form> </li>
+      </ul>
+    </nav>
+
+    <div class="sec_2">
+      <h1>Information about Student's Grade</h1>
+      <table>
+        <tr>
+          <td class="bld_1">Subject's Id</td>
+          <td class="bld_1">Subject</td>
+          <td class="bld_1">Teacher</td>
+          <td class="bld_1">Grade</td>
+        </tr>
+        <% for(var i=0; i < grades.length;i++){ %>
+          <%var grade, teacher , sub_id,id,sub_name,teacherLast%>
+          <%grade=grades[i]%>
+          <%teacher=teachers[i]%>
+          <%sub_id=sub_ids[i]%>
+          <%sub_name=sub_names[i]%>
+          <%teacherLast=teacher_lasts[i]%>
+          <%id=ids%>
+        <tr>
+          <td><%=sub_id %></td>
+          <td><%=sub_name %></td>
+          <td><%=teacher %> <%=teacherLast%></td>
+          <td><%=grade%></td>
+        </tr>
+        <%}%>
+
+
+      </table>
+
+      <footer class="foot">
+        <div class="fot_2">
+          <h1 class="tot_5">Angels School</h1>
+          <p class="tot_5">Child's second Home</p>
+
+        </div>
+
+
+
+      </footer>
+
+
+  </body>
+</html>

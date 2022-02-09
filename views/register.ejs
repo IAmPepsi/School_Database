@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"type="text/css" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Register</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>Angels School</h2>
+      </div>
+      <ul class="nav_1">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+      
+        <li><a href="#">Contact us</a></li>
+        <li><a class="current" href="register">Register</a></li>
+        <li><a href="login">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="con_2">
+
+        <h1>Create a New Account </h1>
+        <p>It’s quick and easy.</p>
+        <form class="form_1" action="/register" method="post">
+
+          <input class="inp_2 eee" type="text" name="firstName" value="" placeholder="First name" required>
+          <input class="inp_2 ini_1" type="text" name="lastName" value="" placeholder="Last name" required>
+          <br>
+          <input class="inp_1" type="email" name="email" value="" placeholder="Email" required>
+          <br>
+          <input class="inp_1 ini_2" type="password" name="password" value="" placeholder="password" required>
+          <input class="inp_1 ini_2" type="password" name="passwordConf" value="" placeholder="Conferm password" required>
+
+          <div class="roll">
+            <h1>Select your Roll</h1>
+            <span>Student :</span> <input type="radio" name="roll" value="student" required >
+            <span>Teacher :</span> <input type="radio" name="roll" value="teacher"  required>
+
+
+          </div>
+
+        <div class="click">
+          <p>By clicking Sign Up, you agree to our Terms. Learn how we collect, use and share your data in our Data Policy and how we use cookies and similar technology in our Cookies Policy. You may receive SMS Notifications from us and can opt out any time</p>
+
+
+        </div>
+
+
+        <button type="submit" name="button">Sign Up</button>
+        <button type="reset" name="button">Reset</button>
+        </form>
+
+
+
+      </div>
+
+    </div>
+
+
+  </body>
+</html>

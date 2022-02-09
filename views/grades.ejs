@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="substyle.css">
+    <title>Grades</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>Angels School</h2>
+      </div>
+      <ul class="nav_1">
+        <li><a href="teacher">dashbord</a></li>
+        <li><a href="#">About</a></li>
+      
+        <li><a href="#">Contact us</a></li>
+        <li> <form class="logout" action="/logout" method="post">
+          <button id="logout" type="submit" name="button">Logout</button>
+        </form> </li>
+      </ul>
+    </nav>
+
+    <div class="sec_2">
+      <h1>Adding Grades to students</h1>
+
+      <table class="trnew">
+        <tr>
+          <td class="bld_1">Student's first name</td>
+          <td class="bld_1">Student's last name</td>
+          <td class="bld_1">Subject</td>
+          <td class="bld_1">Student's Grade</td>
+        </tr>
+        <% for(var i=0; i < students.length;i++){ %>
+          <%var name ,last,subjectName,id,teacherId,subjectId%>
+          <%name=students[i]%>
+          <%last=lasts[i]%>
+          <%subjectName=subjectNames%>
+          <%id=ids[i]%>
+          <%teacherId=teacherIds%>
+          <%subjectId=subjectIds%>
+
+        <tr>
+          <td class="tRow"><%=name %></td>
+          <td class="tRow"><%=last%></td>
+          <td class="tRow"><%=subjectName%></td>
+          <td> <form class="" action="/grade" method="post">
+            <input type="text" name="grade_num" value="">
+            <input type="hidden" name="hidden_teacher_id" value="<%=teacherId%>">
+            <input type="hidden" name="hidden_subject_id" value="<%=subjectId%>">
+            <input type="hidden" name="hidden_student_id" value="<%=id%>">
+            <button id="btn_2" type="submit" name="button">Add</button>
+
+          </form>  </td>
+        </tr>
+        <%}%>
+      </table>
+
+      <div class="wrongsub">
+      <i class="wrong"><%=grade_wrong%><%=grade_suc%></i>
+      </div>
+
+
+
+
+
+  </body>
+</html>

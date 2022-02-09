@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .5s;
+  font-family: sans-serif;
+
+}
+.font_1{
+  font-weight: 900;
+  font-size: 3.5em;
+  text-align: center;
+  animation-name: example;
+  animation-duration: 4.5s;
+  position: relative;
+
+
+}
+
+
+@keyframes example {
+  0% {top: -20px; color:#000; }
+  50% {top: 400px; color: #00ffb0;}
+}
+.font_1{
+  color: #fff;
+  top:40%;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 60px;
+}
+.nav_1{
+  display: flex;
+  justify-content: space-between;
+  /*background: pink;*/
+  width: 40%;
+  list-style: none;
+  align-items: center;
+  margin-right: 25%;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  margin-right: 20%;
+  color: #00ffb0;
+}
+.current{
+  color: #00ffb0;
+}
+li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2rem;
+}
+li a:hover{
+  color: #00ffb0;
+  font-size: 1.3rem;
+}
+li a:active{
+  color: #00ffb0;
+}
+
+.sec_1{
+  background-image:url(kidsbakc.jpeg);
+  height: 100vh;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.welc{
+    height: 30vh;
+    margin-top: 0px;
+}
+.container{
+  margin: 40px 5%;
+  font-size: 1.5rem;
+
+}
+.container h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.regi{
+  height: 50vh;
+  background-image: url(study.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+input{
+  width: 25%;
+  height: 10%;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+#newsLink{
+  width: 15%;
+  height: 10%;
+  background-color: #00ffb0;
+  text-decoration: none;
+  justify-content: center;
+  display:flex;
+  align-items: center;
+  color: black;
+  font-size: 1.3rem;
+
+}
+#newsLink:hover{
+  font-size: 1.5rem;
+  color: #00ffb0;
+  background-color: black;
+}
+.sec_2{
+  height: 40vh;
+}
+.sec_2 h1{
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+table{
+  width: 100%;
+  height: 50%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+.bld_1{
+  font-weight: bold;
+}
+td th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 50px;
+  width: 100%;
+}
+td{
+  padding-left: 50px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.foot{
+  height: 70vh;
+  background-image: url(girl.jpeg);
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.fot_2 {
+  padding-top: 100px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+.fot_2 p{
+  margin-left: 20px;
+  color: #00ffb0;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="dashstyle.css">
+    <title>Dashbord</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>Angels School</h2>
+      </div>
+      <ul class="nav_1">
+        <li><a class="current" href="dashbord">dashbord</a></li>
+        <li><a href="#">About</a></li>
+        
+        <li><a href="#">Contact us</a></li>
+        <li> <form class="logout" action="/logout" method="post">
+          <button id="logout" type="submit" name="button">Logout</button>
+        </form> </li>
+      </ul>
+    </nav>
+
+    <div class="section_1">
+      <h1 id="welc">Wellcome <%= username %>  to Angels School</h1>
+      <div class="container">
+        <div class="first_link">
+          <a id="tagNum" href="subjects">1- Select your Subjects</a>
+        </div>
+
+        <div class="second_link">
+          <a href="exams">2- Register for the Exams</a>
+
+        </div>
+
+        <div class="second_link">
+          <a href="studentgrade">3- Cheack your grades</a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+  </body>
+</html>

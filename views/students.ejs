@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="substyle.css">
+
+    <title>Students</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>Angels School</h2>
+      </div>
+      <ul class="nav_1">
+        <li><a href="teacher">dashbord</a></li>
+        <li><a href="#">About</a></li>
+        
+        <li><a href="#">Contact us</a></li>
+        <li> <form class="logout" action="/logout" method="post">
+          <button id="logout" type="submit" name="button">Logout</button>
+        </form> </li>
+      </ul>
+    </nav>
+
+    <div class="sec_2">
+      <h1>Information about the Students in your Class</h1>
+      <table class="trnew">
+        <tr>
+          <td class="bld_1">Student's first name</td>
+          <td class="bld_1">Student's last name</td>
+          <td class="bld_1">Email</td>
+          <td class="bld_1">Student's id</td>
+        </tr>
+        <% for(var i=0; i < students.length;i++){ %>
+          <%var name ,last,email,id%>
+          <%name=students[i]%>
+          <%last=lasts[i]%>
+          <%email=emails[i]%>
+          <%id=ids[i]%>
+
+        <tr>
+          <td class="tRow"><%=name %></td>
+          <td class="tRow"><%=last%></td>
+          <td class="tRow"><%=email%></td>
+          <td class="tRow"><%=id%></td>
+        </tr>
+        <%}%>
+
+
+      </table>
+
+      <footer class="foot">
+        <div class="fot_2">
+          <h1 class="tot_5">Angels School</h1>
+          <p class="tot_5">Child's second Home</p>
+
+        </div>
+
+
+
+      </footer>
+  </body>
+</html>
